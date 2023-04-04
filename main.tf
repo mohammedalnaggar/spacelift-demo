@@ -3,7 +3,7 @@ resource "aws_instance" "bastion-host" {
   instance_type = "t3.nano"
 
 
-  key_name = "timeless-staging-bastion"
+  key_name = "timeless-test"
 
   vpc_security_group_ids = [aws_security_group.bastion_host_sg.id]
 
