@@ -1,6 +1,6 @@
 resource "aws_instance" "bastion-host" {
   ami           = "ami-0d1ddd83282187d18"
-  instance_type = "t3.micro"
+  instance_type = "t3.nano"
 
 
   key_name = "timeless-staging-bastion"
