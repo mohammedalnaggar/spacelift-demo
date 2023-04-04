@@ -1,5 +1,5 @@
 resource "aws_instance" "bastion-host" {
-  ami           = "ami-0d1ddd83282187d18"
+  ami           = "ami-007855ac798b5175e"
   instance_type = "t3.nano"
 
 
