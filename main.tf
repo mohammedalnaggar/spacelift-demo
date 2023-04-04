@@ -16,7 +16,7 @@ resource "aws_security_group" "bastion_host_sg" {
 
   description = "Host SG"
   name        = "bastion-host-sg"
-  vpc_id      = "vpc-f2919d8a"
+  vpc_id      = "vpc-00b7fd2a39f7ce98f"
 
   # inbound rule for Bastion Host SSH
   ingress {
