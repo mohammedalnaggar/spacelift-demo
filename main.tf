@@ -8,7 +8,7 @@ resource "aws_instance" "bastion-host" {
   vpc_security_group_ids = [aws_security_group.bastion_host_sg.id]
 
   tags = {
-    Name = "timeless-bastion-host"
+    Name = "timeless-test"
   }
 }
 
