@@ -51,6 +51,10 @@ on:
     branches:
     - main
 
+env:
+  ## Sets environment variable
+  API_KEY: {{ secrets.AWS_ACCESS_KEY_ID }}  
+
 permissions:
   contents: read
 
@@ -80,9 +84,8 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
-    - name: get AWS creds from secrets
-      env: 
-        AWS_ACCESS_KEY_ID: {{ secrets.AWS_ACCESS_KEY_ID }}
+
+    - name: Confirm ENV VAR
       run: echo "got creds for aws --> $AWS_ACCESS_KEY_ID"
 
     # Checks that all Terraform configuration files adhere to a canonical format
