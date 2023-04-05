@@ -53,7 +53,7 @@ on:
 
 env:
   ## Sets environment variable
-  API_KEY: {{ secrets.AWS_ACCESS_KEY_ID }}  
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}  
 
 permissions:
   contents: read
